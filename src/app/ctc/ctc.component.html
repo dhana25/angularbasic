@@ -1,0 +1,30 @@
+<div class="container">
+    <p>ctc work</p>
+    <div class="row">
+        <h3><p>Paragraph tag</p></h3>
+        <ng-content select="[channel]"></ng-content>
+       <h3><p>Heading tag</p></h3>
+        <ng-content select=".head"></ng-content>
+    </div>
+</div>
+
+<hr>
+
+<div class="container">
+    <h3>Ng-container</h3>
+    <div class="row" *ngFor="let number of num">
+        <ng-container *ngIf="number % 2 == 0">
+            {{number}}
+        </ng-container>
+    </div>
+</div>
+<hr>
+
+<div class="container">
+    <h3>Ng-template</h3>
+    <div class="row">
+        <ng-template [ngIf]=true>This is ng template</ng-template>
+        <div *ngIf="true else elseblock">condition is working</div>
+        <ng-template #elseblock>condition not working</ng-template>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="col-md-12">
+        <label for="fdata">Parent Msg:</label>
+        <input type="text" [(ngModel)]="fdata" name="fdata">
+        <p>Child Msg:</p>
+        <p>{{childData}}</p>
+    </div>
+</div>
+<hr>
+<div class="container">
+    <div class="col-md-12">
+        <app-comp2 [rdata] = "fdata" (cmsg)="getData($event)"></app-comp2>
+    </div>
+</div>
+<hr>
+
+
+

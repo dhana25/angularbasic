@@ -1,0 +1,82 @@
+.text-color {
+    color:red;
+}
+
+header {
+    padding: 10px;
+    background-color: rgb(32,32,32);
+    margin:20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    text-decoration: none;
+    color:blue;
+}
+
+a.active {
+    color: rgb(0, 255, 255);
+}
+
+ul {
+    background-color: black;
+    padding:5px;
+}
+
+li {
+    background-color: pink;
+    padding:5px;
+    margin:5px;
+}
+
+.hide {
+    display : none;
+}
+
+.first {
+    background-color: orange;
+}
+
+.last {
+    background-color: yellow;
+}
+
+span:nth-of-type(even) {
+    font-size: 20px;
+    color:red;
+}
+span:nth-of-type(odd) {
+    font-size: 20px;
+    color:rgb(83, 185, 83);
+}
+
+.dflex {
+    display:flex;
+   
+}
+
+input.ng-invalid.ng-touched {
+    border:1px solid red;
+}
+
+small {
+    color:red;
+}
+
+.red {
+    color : red
+}
+
+.green {
+    color : green;
+}

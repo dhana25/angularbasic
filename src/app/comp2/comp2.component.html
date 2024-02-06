@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="row">
+        <p>Parent Msg: {{rdata}}</p>
+    </div>
+    <div class="row">
+        <label for="cmsg">Child Msg:</label>
+        <input type="text" name="cmsg"  (input) = "sendEmit($event)">
+    </div>
+</div>
